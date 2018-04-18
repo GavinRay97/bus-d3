@@ -1,7 +1,18 @@
 {
   "root": true,
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
   "extends": [
     "plugin:vue/essential",
     "@vue/prettier"
-  ]
+  ],
+  "plugins": [
+    "babel"
+  ],
+  "rules": {
+    "semi": ["error", "never"],
+    "arrow-parens": ["error", "as-needed"],
+    "no-confusing-arrow": ["error", {"allowParens": true}]
+  }
 }
